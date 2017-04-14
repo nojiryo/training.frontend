@@ -17,6 +17,10 @@ a:hover{
 	color:#b7dbf2;
 }
 
+a:hover .frame{
+	border:10px solid #ccc;
+}
+
 a:active{
 	color:#4ca4e8;
 }
@@ -27,10 +31,37 @@ a:active{
 	height:auto;
 }
 
+.float-box{
+	float:left;
+	margin-right:1em;
+	margin-bottom:0.5em;
+	vertical-align:baseline;
+}
+
+.float-clear{
+	overflow:hidden;
+}
+
 
 </style>
 </head>
 <body>
+
+<div class="float-clear">
+	<div class="float-box">
+		<img src="../html5-css3design/images/orangedrip.png" width="157" height="140" alt="">
+	</div>
+	<p>「新しいコーヒーとの出会い」を提供する orange Drip Cafe が．．．心よりお待ちしております。</p>
+</div>
+
+
+
+<a href="http://studio947.net">
+<div>
+	<img src="../html5-css3design/images/image0320.jpg" width="396" height="292" alt="積み木" class="frame">
+	<p>カラフルな積み木</p>
+</a>
+</div>
 
 <img src="../html5-css3design/images/image1646.jpg" width="904" height="572" alt="日が沈む" class="img-responsive">
 
