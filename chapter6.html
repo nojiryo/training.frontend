@@ -4,18 +4,137 @@
 <meta charset="utf-8">
 <style>
 
+.sidebar{
+	padding:8px;
+	border 1px solid #ccc;
+	width:300px;
+}
+
+.subnav{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.subnav li{
+	overflow:hidden;
+	margin:1em 0 1em 0;
+}
+
+.subnav .thumb{
+	float:left;
+	width:100;
+}
+
+.subnav .summary{
+	margin: 0 0 0 108px;
+}
+
+.subnav a{
+	text-decoration: none;
+}
+
+.breadcrumb ol{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.breadcrumb li{
+	display:inline;
+}
+
+.breadcrumb li::after{
+	content:">";
+}
+
+.brandcrumb li:last-child::after{
+	content:none;
+}
+
+.breadcrumb a{
+	text-decoration: none;
+	color:#333;
+}
+
+.item{
+	border:1px solid #cccccc;
+	padding:8px;
+	width:300px;
+}
+
+.item h3{
+	margin:0.5em 0 0.5em 0;
+}
+
 </style>
 </head>
 <body>
-<h2>ペペロンチーノ(2人前)</h2>
-<ul>
-<li>スパゲッティ 200g</li>
-<li>アンチョビ 1/2缶</li>
-<li>トウガラシ 2本</li>
-<li>ピュア・オリーブオイル　100cc</li>
-<li>塩・コショウ　少々</li>
 
+
+<div class="item">
+	<img src="../html5-css3design/images/img0907.jpg" width="300" height="300" alt="">
+	<h3>限定 無人島探検チャーター便</h3>
+	<p>無人島の八丈島に上陸するツアーです。※天候によって中止する場合がございます。</p>
+</div>
+
+<div class="breadcrumb">
+<ol>
+	<li><a href="/">ホーム</a></li>
+	<li><a href="/products/">製品リスト</a></li>
+	<li><a href="/products/lens">カメラレンズ</a></li>
+	<li>広角レンズ</li>
+
+</ol>
+
+
+
+<ul>
+	<li><a href="/support/">サポート</a></li>
+	<li><a href="/price/">プライスリスト</a></li>
+	<li><a href="/faq/">よくある質問</a></li>
 </ul>
+</div>
+
+<div class="sidebar">
+	<div class="recent">
+		<h3>最近の記事</h3>
+<ul class='subnav'>
+	<li>
+		<a href="記事url">
+			<img src="../html5-css3design/images/image2217.png" width="100" height="100" alt="" class="thumb">
+			<p class="summary">OSをアップデートして使いづらくなった？ OSはアップデートすべきなのか検証！</p>
+		</a>
+	</li>
+	<li>
+		<a href="記事url2">
+			<img src="../html5-css3design/images/image2218.png" width="100" height="100" alt="" class="thumb">
+			<p class="summary">お客様からご要望が多かった「製品サポートの改善」。体制を刷新して、サポート内容を強化します</p>
+		</a>
+	</li>
+</ul>
+	</div>
+</div>
+
+<h2>ペペロンチーノ(2人前)</h2>
+
+<ul>
+	<li>スパゲッティ 200g</li>
+	<li>アンチョビ 1/2缶</li>
+	<li>トウガラシ 2本</li>
+	<li>ピュア・オリーブオイル　100cc</li>
+	<li>塩・コショウ　少々</li>
+</ul>
+
+<ol>
+	<li>スパゲッティ 200g</li>
+	<li>アンチョビ 1/2缶</li>
+	<li>トウガラシ 2本</li>
+	<li>ピュア・オリーブオイル　100cc</li>
+	<li>塩・コショウ　少々</li>
+
+</ol>
+
 
 
 </body>
