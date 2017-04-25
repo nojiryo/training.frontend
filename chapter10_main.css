@@ -355,3 +355,63 @@ course-h3 {
 }
 
 
+.q-and-a {
+	margin-top:1em;
+	padding: 8px 0 0 60px;
+
+}
+
+.question {
+	font-weight:bold;
+	color:#6eba44;
+	background:url("html5-css3design/chapter10/c10-01/images/q.png") no-repeat;
+	background-size: 40px 40px;
+}
+
+.answer {
+	margin-bottom:2em;
+	background: url("html5-css3design/chapter10/c10-01/images/a.png") no-repeat;
+	background-size: 40px 40px;
+}
+
+.contact{
+	padding:20px;
+	background: #fff;
+	border-radius: 10px;
+}
+
+.contact p {
+	margin-bottom:1em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width:100%;
+}
+
+textarea {
+	height:200px;
+	border:1px solid: #ccc;
+}
+
+@media screen and (min-width:768px) {
+	input[type="text"]
+	input[type="email"] {
+		width: 50%;
+	}
+}
+
+input[type="submmit"] {
+	width:300px;
+	padding:8px 0;
+	background-color:#709a00;
+	border:none;
+	border-radius:10px;
+	text-align:center;
+	text-decoration: none;
+	color:#fff;
+	font-size:1.2rem;
+}
+
+
