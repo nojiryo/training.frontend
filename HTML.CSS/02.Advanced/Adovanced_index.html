@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
 <html lang=ja>
-<meta charset="utf-8">
 <head>
+	<meta charset="utf-8">
+	<meta name="description" content="フリーランスのWebデザイナー">
 	<title>シングルページレイアウト</title>
 </head>
 
 <body>
 <header>
-	<h3><a name="Topmessage">Web designer's portfolio</a></h3>
+	<h3>Web designer's portfolio</h3>
 	<h1>HI,MY NAME IS...</h1>
-	<h5>Check out some of my works.</h5>
-	<a href="#ABOUTME"><input type="button" name="button" value="LEARN MORE" id="learn more"></a>
-	<a href="#CONTACT"><input type="button" name="button" value="SEND MESSAGE" id="send message"></a>
+	<p>Check out some of my works.</p>
+	<a href="#about">LEARN MORE</a>
+	<a href="#contact">SEND MESSAGE</a>
 </header>
 
-<div class="about">
-<h3><a name="ABOUTME">ABOUT ME</a></h3>
+<div id="about">
+<h2>ABOUT ME</h2>
 	<p>はじめまして。日本でwebデザイナーをしています。<br>
 	デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。</p>
 
@@ -25,69 +25,77 @@
 </div>
 
 <div class="works">
-<h3>WORKS</h3>
-		<div class="firstworks">
-			<p>ひとつめの制作事例が入ります。<br>
-			簡単な説明が入ります。<br>
-			使用ツール：xxx,xxx,xxx</p>
-			<a href="#Topmessage"><input type="button" name="button" value="READ MORE" class="readmore"></a>
-		</div>
-		<img src="Advanced-images/tree.jpg" class="firstworks">
+	<h2>WORKS</h2>
+		<section class="first-works">
+			<section class="first-image">
+				<p class="first-text">ひとつめの制作事例が入ります。<br>
+				簡単な説明が入ります。<br>
+				使用ツール：xxx,xxx,xxx<br>
+				<a href="#">READ MORE</a></p>
+			</section>
+			<img src="/Advanced-images/tree.jpg" class="first-image">
+		</section>
 
-		<img src="Advanced-images/building.jpg" class="secondworks">
-		<div class="secondworks">
-			<p>ふたつめの制作事例が入ります。<br>
-			簡単な説明が入ります。<br>
-			使用ツール：xxx,xxx,xxx</p>
-			<a href="#Topmessage"><input type="button" name="button" value="READ MORE" class="readmore"></a>
-		</div>
+		<section class="second-works">
+			<section class="second-image">
+				<p class="second-text">ふたつめの制作事例が入ります。<br>
+				簡単な説明が入ります。<br>
+				使用ツール：xxx,xxx,xxx<br>
+				<a href="#">READ MORE</a></p>
+			</section>
+			<img src="/Advanced-images/building.jpg" class="second-image">
+		</section>
 
-		<div class="thirdworks">
-			<p>みっつめの制作事例が入ります。<br>
-			簡単な説明が入ります。<br>
-			使用ツール：xxx,xxx,xxx</p>
-			<a href="#Topmessage"><input type="button" name="button" value="READ MORE" class="readmore"></a>
-		</div>
-		<img src="Advanced-images/lake.jpg" class="thirdworks">
+		<section class="third-works">
+			<section class="second-image">
+				<p class="third-text">みっつめの制作事例が入ります。<br>
+				簡単な説明が入ります。<br>
+				使用ツール：xxx,xxx,xxx<br>
+				<a href="#">READ MORE</a></p>
+			</section>
+			<img src="/Advanced-images/lake.jpg" class="third-image">
+		</section>
 
-		<img src="Advanced-images/sky.jpg" class="forthworks">
-		<div class="forthworks">
-			<p>よっつめの制作事例が入ります。<br>
-			簡単な説明が入ります。<br>
-			使用ツール：xxx,xxx,xxx</p>
-			<a href="#Topmessage"><input type="button" name="button" value="READ MORE" class="readmore"></a>
-		</div>
+		<section class="forth-text">
+			<section class="forth-image">
+				<p>よっつめの制作事例が入ります。<br>
+				簡単な説明が入ります。<br>
+				使用ツール：xxx,xxx,xxx<br>
+				<a href="#">READ MORE</a></p>
+			</section>
+			<img src="/Advanced-images/sky.jpg" class="forth-image">
+		</section>
 </div>
 
 <div class="myskills">
-<h3>MY SKILLS</h3>
-	<h5>IDEA</h5>
+	<h2>MY SKILLS</h2>
+	<h3>IDEA</h3>
 	<p>何かを考えることが好きです。<br>
 		新しいことを思いついては試しています。<br>
 		ディレクションの経験もあります。</p>
 
-	<h5>DESIGN</h5>
+	<h3>DESIGN</h3>
 	<p>見た目の綺麗さだけじゃなくて、<br>
 		使いやすさ、情報の伝わりやすさなど、<br>
 		その先まで考えることを意識しています。</p>
 
-	<h5>CODING</h5>
+	<h3>CODING</h3>
 	<p>HTML/CSSコーディングも行います。<br>
 		正しく美しいマークアップと、<br>
 		今後の変更への強さを考慮しています。</p>
 </div>
 
-<div class="contact">
-<h3><a name="CONTACT">CONTACT</a></h3>
+<div id="contact">
+	<h2>CONTACT</h2>
 	<form action="#" method="post">
 		<p><input type="text" name="name" value="NAME" id="name-field"></p>
 		<textarea name="comment" id="comment" value="MESSAGE"></textarea>
-		<p><input type="submit" name="submit" value="SEND"></p>
+		<p><a href="#"><input type="submit" name="submit" value="SEND"></a></p>
 	</form>
 </div>
 
 <footer>
-	&copy;sample site
+<p><small>&copy;sample site</small></p>
 </footer>
 
 </body>
