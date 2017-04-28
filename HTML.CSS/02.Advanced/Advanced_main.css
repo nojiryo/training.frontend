@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+body {
+	margin:0;
+	padding:0;
+	text-align:center;
+	background: url("/Advanced-images/bg.png");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+/*---------------------------------------------------------------------
+ HEADER
+ ---------------------------------------------------------------------*/
+.page-header {
+	padding:170px 30px 80px;
+}
+
+.top-contents {	
+	max-width: 100%;
+	color:#ffffff;
+	text-align:center;
+}
+
+.sub-title {
+	color:#;
+}
+
+h1 {
+	font-size:50px;
+}
+
+.top {
+	border: solid;
+	display:inline-block;
+	background-color: #97a58d;
+}
+
+.send-message {
+	background-color:#f2aD36;
+}
+
+.top:hover {
+	opacity:0.7;
+}
+
+/*---------------------------------------------------------------------
+ section class="about-me"
+ ---------------------------------------------------------------------*/
+
+.about-me {
+	margin-top:10%;
+	margin-bottom:0;
+	background:#ffffff;
+}
+
+
+/*---------------------------------------------------------------------
+ section class="my-works"
+ ---------------------------------------------------------------------*/
+.my-works {
+	background-color:#383634;
+	color:#ffffff;
+}
+
+.work-list {
+	display:table;
+	margin:0;
+}
+
+.first-text {
+	background-image:url("/Advanced-images/tree.jpg");
+	background-repeat: no-repeat;
+	transform:scale( 1, -1);
+}
+
+.work-list {
+	list-style-type: none;
+	display:inline-block;
+}
+
+.work-list li {
+	display:table-cell;
+	margin:0;
+}
+
+.first-text p {
+	transform:scale( 1, -1);
+}
+
+.first-text > a {
+		transform:scale( 1, -1);
+}
+
+.second-text {
+	margin-top:50%;
+}
+
+/*---------------------------------------------------------------------
+ section class="my-skills"
+ ---------------------------------------------------------------------*/
+
+.my-skills {
+	margin-top:0;
+	background-color: #ffffff;
+}
+
+.skill-list {
+	list-style-type: none;
+	display:table;
+	text-align:center;
+}
+
+.skill-list li {
+	display: table-cell;
+}
+
+/*---------------------------------------------------------------------
+ section class="contact-me"
+ ---------------------------------------------------------------------*/
+.contact-me {
+	padding:170px 30px 80px;
+}
+
+.contact-me h2 {
+	color:#ffffff;
+}
+
+p input , textarea {
+	background-color:transparent;
+}
+
+
+
+input[type="submit"] {
+	background-color: #afa58d;	
+}
+
+/*---------------------------------------------------------------------
+ section class="page-footer"
+ ---------------------------------------------------------------------*/
+
+.page-footer {
+	color:#ffffff;
+}
+
+
+
