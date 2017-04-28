@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang=ja>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="フリーランスのWebデザイナー">
+<title>シングルページレイアウト</title>
+</head>
+<body>
+
+<header class="page-header">
+	<div class="top-contents">
+		<p class="top-text">Web designer's portfolio</p>
+		<h1>HI,MY NAME IS...</h1>
+		<p class="sub-title">Check out some of my works.</p>
+		<a href="#about" class="top learn-more">LEARN MORE</a>
+		<a href="#contact" class="top send-message">SEND MESSAGE</a>
+	</div>
+</header>
+
+<section class="about-me">
+	<h2>ABOUT ME</h2>
+	<p>
+	はじめまして。日本でwebデザイナーをしています。<br>
+	デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。</p>
+
+	<p>
+	このサイトは「HTML/CSS モダンコーディング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオです。<br>
+	このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。</p>
+</section>
+
+<section class="my-works">
+	<h2>WORKS</h2>
+	<ul class="work-list">
+		<li>
+			<div class="first-text">
+				<p>ひとつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：xxx,xxx,xxx</p>
+				<a href="#"　class="read-more">READ MORE</a>
+			</div>
+			<img src="/Advanced-images/tree.jpg" class="common-image first-image">
+		</li>
+
+		<li>
+			<img src="/Advanced-images/building.jpg" class="common-image second-image">
+			<div class="second-text">
+				<p>ふたつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：xxx,xxx,xxx</p>
+				<a href="#"　class="read-more">READ MORE</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="third-text">
+				<p>みっつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：xxx,xxx,xxx</p>
+				<a href="#"　class="read-more">READ MORE</a>
+			</div>
+			<img src="/Advanced-images/lake.jpg" class="common-image third-image">
+		</li>
+
+		<li>
+			<img src="/Advanced-images/sky.jpg" class="common-image forth-image">
+			<div class="forth-text">
+				<p>よっつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：xxx,xxx,xxx</p>
+				<a href="#"　class="read-more">READ MORE</a>
+			</div>
+		</li>
+	</ul>
+</section>
+
+<section class="my-skills">
+	<h2>MY SKILLS</h2>
+	<ul class="skill-list">
+		<li>
+			<div class="skill-common idea-skill">
+				<h3>IDEA</h3>
+				<p>
+				何かを考えることが好きです。<br>
+				新しいことを思いついては試しています。<br>
+				ディレクションの経験もあります。</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="skill-common design-skill">
+				<h3>DESIGN</h3>
+				<p>
+				見た目の綺麗さだけじゃなくて、<br>
+				使いやすさ、情報の伝わりやすさなど、<br>
+				その先まで考えることを意識しています。
+				</p>
+			</div>
+		</li>
+
+		<li>
+			<div class="skill-common coding-skill">
+				<h3>CODING</h3>
+				<p>HTML/CSSコーディングも行います。<br>
+				正しく美しいマークアップと、<br>
+				今後の変更への強さを考慮しています。
+				</p>
+			</div>
+		</li>
+	</ul>
+</section>
+
+<section class="contact-me">
+	<h2>CONTACT</h2>
+	<form action="#" method="post">
+		<p><input type="text" name="name" value="NAME" id="name-field"></p>
+		<textarea name="comment" id="comment" value="MESSAGE"></textarea>
+		<p><input type="submit" name="submit" value="SEND" class="send-message"></p>
+	</form>
+</section>
+
+<footer class="page-footer">
+<p><small>&copy;sample site</small></p>
+</footer>
+
+</body>
+</html>
