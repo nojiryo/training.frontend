@@ -1,30 +1,42 @@
 @charset "utf-8";
 
+/*html {
+	font-size: 62.5%;
+}
+
+*/
 body {
 	margin:0;
 	padding:0;
+	display: inline-block;
 	text-align:center;
-	background: url("/Advanced-images/bg.png");
+	background-color:#000000;
+	background-image: url("/Advanced-images/bg.png");
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-size:cover;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 /*---------------------------------------------------------------------
  HEADER
  ---------------------------------------------------------------------*/
 .page-header {
-	padding:170px 30px 80px;
+	padding:170px 80px 30px;
 }
 
 .top-contents {	
 	max-width: 100%;
 	color:#ffffff;
+	background-size:cover;
 	text-align:center;
 }
 
 .sub-title {
-	color:#;
+	color:#666666;
 }
 
 h1 {
@@ -32,17 +44,35 @@ h1 {
 }
 
 .top {
+	width:180px;
+	padding:10px 10px 10px 10px;
 	border: solid;
+	border-radius:5px;
 	display:inline-block;
-	background-color: #97a58d;
-}
-
-.send-message {
-	background-color:#f2aD36;
+	background-color:#97a58d;
 }
 
 .top:hover {
-	opacity:0.7;
+	opacity:0.9;
+}
+
+.top-contents .send-message {
+	margin-left:15px;
+	color:#ffffff;
+	text-decoration: none;
+	border-color:#f2aD36;
+	background-color:#f2aD36;
+}
+
+.send-message {
+	color:#ffffff;
+}
+
+.learn-more {
+		color:#ffffff;
+		text-decoration: none;
+		border-color:#97a58d;
+		background-color:#97a58d;	
 }
 
 /*---------------------------------------------------------------------
@@ -50,8 +80,8 @@ h1 {
  ---------------------------------------------------------------------*/
 
 .about-me {
-	margin-top:10%;
-	margin-bottom:0;
+	padding:80px 30px;
+	margin:0;
 	background:#ffffff;
 }
 
@@ -60,56 +90,117 @@ h1 {
  section class="my-works"
  ---------------------------------------------------------------------*/
 .my-works {
-	background-color:#383634;
+	padding:80px 0;
 	color:#ffffff;
+	background-color:#383634;
 }
 
-.work-list {
+.my-works h2 {
+	position:relative;
+	display:inline-block;
+	margin-top:60px;
+	padding-bottom:15px;
+	letter-spacing:2px;
+}
+
+.work-list{
 	display:table;
-	margin:0;
+	width:100%;
+	margin-top:60px;
+	table-layout: fixed;
+}
+
+
+.work-list li {
+	position:relative;
+	display:table-cell;
+	list-style-type: none;
+}
+
+.common-image {
+	display:block;
+	width:100%;
+}
+
+img {
+	border:0;
+}
+
+.work-list:nth-child(odd) {
+    padding-top:0;
 }
 
 .first-text {
-	background-image:url("/Advanced-images/tree.jpg");
-	background-repeat: no-repeat;
-	transform:scale( 1, -1);
-}
-
-.work-list {
-	list-style-type: none;
-	display:inline-block;
-}
-
-.work-list li {
 	display:table-cell;
-	margin:0;
+	width:100%;
+	height:100%;
+	padding:20px;
 }
 
-.first-text p {
-	transform:scale( 1, -1);
+.work-text {
+	display:table-cell;
+	vertical-align: middle;
+	line-height:2;
 }
 
-.first-text > a {
-		transform:scale( 1, -1);
+.list-tree::after {
+	background-image:url("/Advanced-images/tree.jpg");
+}
+
+
+/*first-image::after {
+	background-image: url("/Advanced-images/tree.jpg");
 }
 
 .second-text {
-	margin-top:50%;
+	display: table;
+}
+*/
+.work-list::after {
+	content:'';
+	position:absolute;
+	left:0;
+	width:100%;
+	height:50%;
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	opacity:0.2;
+	transform: scaleY(-1);
+}
+
+
+.read-more {
+	width:60%;
+	margin-top:20px;
+	padding:3px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	border-radius:4px;
+	text-decoration:none;
+	letter-spacing: 1px;
+	font-size:1.2rem;
 }
 
 /*---------------------------------------------------------------------
  section class="my-skills"
  ---------------------------------------------------------------------*/
-
 .my-skills {
-	margin-top:0;
-	background-color: #ffffff;
+	padding:80px 30px;
+	margin:0;
+	background-color:#ffffff;
+}
+
+.my-skills h2 {
+	margin:0;
 }
 
 .skill-list {
+	width:100%;
 	list-style-type: none;
 	display:table;
 	text-align:center;
+	margin:auto 0;
+	table-layout: fixed;
 }
 
 .skill-list li {
@@ -120,21 +211,42 @@ h1 {
  section class="contact-me"
  ---------------------------------------------------------------------*/
 .contact-me {
-	padding:170px 30px 80px;
+	padding:100px 50px 50px;
 }
 
 .contact-me h2 {
 	color:#ffffff;
 }
 
-p input , textarea {
-	background-color:transparent;
+form {
+	width:50%;
+	margin:50px auto 0;
 }
 
 
 
-input[type="submit"] {
-	background-color: #afa58d;	
+#name-field {
+	display:block;
+	width:100%;
+	padding:15px;
+	outline:none;
+	line-height:normal;
+	color:#ffffff;
+	background-color:transparent;
+}
+
+textarea {
+	display:block;
+	width:100%;
+	height:150px;
+	color:#ffffff;
+	background-color:transparent;
+}
+
+
+.submit-message {
+	color:#ffffff;
+	background-color:transparent;
 }
 
 /*---------------------------------------------------------------------
@@ -144,6 +256,3 @@ input[type="submit"] {
 .page-footer {
 	color:#ffffff;
 }
-
-
-
