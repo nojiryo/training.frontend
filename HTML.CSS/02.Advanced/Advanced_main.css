@@ -15,6 +15,8 @@ body {
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-size:cover;
+	font-size:1.4rem;
+	font-family:Raleway,"HiraginoKaku Gothic ProN",Meiryo,sans-serif;
 }
 
 *, *::before, *::after {
@@ -33,6 +35,10 @@ body {
 	color:#ffffff;
 	background-size:cover;
 	text-align:center;
+}
+
+.top-text {
+	font-size: 20px;
 }
 
 .sub-title {
@@ -72,12 +78,16 @@ h1 {
 		color:#ffffff;
 		text-decoration: none;
 		border-color:#97a58d;
-		background-color:#97a58d;	
+		background-color:#97a58d;
 }
 
 /*---------------------------------------------------------------------
  section class="about-me"
  ---------------------------------------------------------------------*/
+
+h2 {
+	font-size:40px;
+}
 
 .about-me {
 	padding:80px 30px;
@@ -99,6 +109,7 @@ h1 {
 .my-works h2 {
 	position:relative;
 	display:inline-block;
+	font-size:40px;
 	margin-top:60px;
 	padding-bottom:15px;
 	letter-spacing:2px;
@@ -111,8 +122,7 @@ h1 {
 .work-list{
 	display:table;
 	width:100%;
-	margin:60px 0 0;
-	padding:0 0 0 0;
+	margin:60px 0 0 0;
 	table-layout: fixed;
 }
 
@@ -121,92 +131,64 @@ h1 {
 	display:table-cell;
 }
 
-
 .common-image {
-	display:block;
+	display: block;
 	width:100%;
 }
 
-.common-image:nth-child(even) {
-	margin:0 0 60%;
+img {
+	border:0;
 }
+
+.work-list li:nth-child(odd) .common-image {
+	margin:60% 0 0 0;
+}
+
+.list-tree {
+	position:absolute;
+	top:50%;
+	left:0;
+	z-index:1;
+	width:100%;
+	overflow-y:1;
+}
+
+
+.first-text {
+	margin-bottom:100%;
+}
+
+.work-list li::after {
+	content:'';
+	position:absolute;
+	top:50%;
+	left:0;
+	width:100%;
+	height:50%;
+	background:no-repeat;
+	background-size:100% 100%;
+	opacity:0.2;
+	transform:scaleY(-1);
+}
+
 
 .first-text {
 	display:table;
 	width:100%;
 	height:100%;
-	padding:20px;
 }
 
 .work-text {
 	display:table-cell;
 	vertical-align:middle;
-	font-size: 1.2rem;
 	line-height:2;
 }
 
-
-
-
-.read-more {
-	width:60%;
-	margin-top:20px;
-	padding:3px;
-	border:1px
-	border-style:solid
-	border-color:#ffffff;
-	display:inline-block;
-	border-radius:4px;
-	text-decoration:none;
-	letter-spacing: 1px;
-	font-size:1.2rem;
+.work-list .read-more {	
+	color:#ffffff;
+	text-decoration: none;
 }
 
-.work-list li:nth-child(1)::after {
-	background-image: url("/Advanced-images/tree.jpg");
-	vertical-align: top;
-}
-
-.work-list li:nth-child(2)::after {
-	background-image: url("/Advanced-images/building.jpg");
-	vertical-align: top;
-}
-
-.work-list li:nth-child(3)::after {
-	background-image: url("/Advanced-images/lake.jpg");
-	vertical-align: top;
-}
-
-.work-list li:nth-child(4)::after {
-	background-image: url("/Advanced-images/sky.jpg");
-	vertical-align: top;
-}
-
-.work-list li:nth-child(odd)::after {
-	content:'';
-	position:absolute;
-	top:50%;
-	left:0;
-	width:100%;
-	height:50%;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	opacity: 0.2;
-	transform:scaleY(-1);
-}
-
-.work-list li:nth-child(even)::after {
-	content:'';
-	position:absolute;
-	top:50%;
-	left:0;
-	width:100%;
-	height:50%;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	opacity: 0.2;
-	transform:scaleY(-1);
-}
 
 /*---------------------------------------------------------------------
  section class="my-skills"
@@ -218,21 +200,66 @@ h1 {
 }
 
 .my-skills h2 {
+	font-size: 40px;
 	margin:0;
 }
 
 .skill-list {
-	width:100%;
+	width:80%;
 	list-style-type: none;
 	display:table;
 	text-align:center;
-	margin:auto 0;
+	margin:50px auto 0;
 	table-layout: fixed;
 }
 
 .skill-list li {
 	display: table-cell;
 }
+
+.skill-list li:nth-child(1) {
+	padding:0 0 0 0;
+}
+
+.skill-common {
+	width:150px;
+	height:150px;
+	margin-bottom: 30px;
+	border:4px solid;
+	border-radius: 50%;
+	color:#f1b400;
+	font-size:8rem;
+	line-height:142px;
+}
+
+.fa {
+	display:inline-block;
+	font:normal normal normal 14px/1 FontAwesome;
+	font-size:inherit;
+	text-rendering:auto;
+	transform:translate(0,0);
+}
+
+.fa-lightbulb:before {
+	content:"\f0eb";
+	font-size:8rem;
+	margin:0 0 0 0;
+	vertical-align: middle;
+}
+
+.fa-skillbrush:before {
+	content:"\f1fc";
+	font-size:7rem;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.fa-sourcecode:before {
+	content:"\f121";
+	font-size:8rem;
+	vertical-align:middle;
+}
+
 
 /*---------------------------------------------------------------------
  section class="contact-me"
@@ -268,7 +295,6 @@ textarea {
 	background-color:transparent;
 }
 
-
 .submit-message {
 	color:#ffffff;
 	background-color:transparent;
@@ -277,7 +303,6 @@ textarea {
 /*---------------------------------------------------------------------
  section class="page-footer"
  ---------------------------------------------------------------------*/
-
 .page-footer {
 	color:#ffffff;
 }
