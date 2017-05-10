@@ -23,13 +23,27 @@ body {
     box-sizing: border-box;
 }
 
+h2 {
+	position:relative;
+	display:inline-block;
+	font-size:40px;
+	margin-top:60px;
+	padding-bottom:15px;
+	letter-spacing:2px;
+}
+
 h2::before , h2::after {
-	content:"";
 	position:absolute;
+	display: block;
+	content:"";
 	right:0;
 	bottom:0;
 	left:0;
 	border-bottom:1px solid #999999;
+}
+
+h2::after {
+	bottom:5px;
 }
 
 /*---------------------------------------------------------------------
@@ -41,7 +55,7 @@ h2::before , h2::after {
 
 .top-contents {	
 	max-width: 100%;
-	color:#ffffff;
+	color:#FFFFFF;
 	background-size:cover;
 	text-align:center;
 }
@@ -83,42 +97,39 @@ h1 {
 
 .top-contents .send-message {
 	margin-left:15px;
-	color:#ffffff;
+	color:#fFFFFF;
 	text-decoration: none;
 	border-color:#f2aD36;
 	background-color:#f2aD36;
 }
 
 .send-message {
-	color:#ffffff;
+	color:#FFFFFF;
 }
 
 .learn-more {
-		color:#ffffff;
+		color:#FFFFFF;
 		text-decoration: none;
-		border-color:#97a58d;
-		background-color:#97a58d;
+		border-color:#AFA58D;;
+		background-color:#AFA58D;
 }
 
 /*---------------------------------------------------------------------
  section class="about-me"
  ---------------------------------------------------------------------*/
 
-h2 {
-	font-size:40px;
-}
-
-h2 p {
-	line-height:3px;
-}
 
 .about-me {
 	padding:80px 30px;
 	margin:0;
-	background:#ffffff;
+	background:#FFFFFF;
 
 }
 
+h2 ~ p {
+	margin: 35px;
+	line-height:2;
+}
 
 /*---------------------------------------------------------------------
  section class="my-works"
@@ -126,18 +137,10 @@ h2 p {
 .my-works {
 	display: block;
 	padding:80px 0;
-	color:#ffffff;
+	color:#FFFFFF;
 	background-color:#383634;
 }
 
-.my-works h2 {
-	position:relative;
-	display:inline-block;
-	font-size:40px;
-	margin-top:60px;
-	padding-bottom:15px;
-	letter-spacing:2px;
-}
 
 /*---------------------------------------------------------------------
 	work-list
@@ -147,7 +150,6 @@ h2 p {
 	display:flex;
 	width:100%;
 	padding:0 0 0 0 ;
-	margin-top:60px;
 	table-layout: fixed;
 }
 
@@ -200,7 +202,6 @@ h2 p {
 	width:100%;
 	height:50%;
 	overflow-y: auto;
-	vertical-align: top;
 }
 
 .common-text{
@@ -219,29 +220,35 @@ h2 p {
 	line-height:2;
 }
 
-.read-more {
+p > a {
 	width:180px;
-	display:inline-block;
-	text-decoration: none
-	padding:10px 10px 10px 10px;
+	margin-top:15px;
+	padding:0;
 	border: solid;
 	border-radius:5px;
-	color:#ffffff
-	border-color:#97a58d;
-	background-color:#97a58d;;
+	display:inline-block;
+	color:#FFFFFF;
+	background-color:transparent;
+	border-color:#FFFFFF;
+	border-width: thin;
+	text-decoration:none;
 }
+
+p > a:hover {
+	opacity:0.6;
+}
+
 
 .work-list li::after {
 	content:"";
 	width: 100%;
-	height: 172px;
+	height:50%;
 	background-size: cover;
 	display: block;
 	position: absolute;
 	opacity:0.2;
 	transform:scaleY(-1);
 }
-
 
 .work-list li:nth-child(1)::after {
 	background-image:url("/Advanced-images/tree.jpg");
@@ -264,7 +271,7 @@ h2 p {
 }
 
 .work-list li:nth-child(even)::after {
-	top:155px;
+	bottom:0;
 }
 
 .work-list li:nth-child(odd) .common-image {
@@ -272,18 +279,26 @@ h2 p {
 }
 
 
+
+
+
 /*---------------------------------------------------------------------
  section class="my-skills"
  ---------------------------------------------------------------------*/
 .my-skills {
-	padding:80px 30px;
+	padding:80px 0 30px 0;
 	margin:0;
-	background-color:#ffffff;
+	background-color:#FFFFFF;
 }
 
 .my-skills h2 {
 	font-size: 40px;
 	margin:0;
+}
+
+h3 {
+	font-size:2rem;
+	font-weight:lighter;
 }
 
 .skill-list {
@@ -292,6 +307,7 @@ h2 p {
 	display:table;
 	text-align:center;
 	margin:50px auto 0;
+	padding-left: 0;
 	table-layout: fixed;
 }
 
@@ -301,6 +317,14 @@ h2 p {
 
 .skill-list li p {
 	line-height:2;
+}
+
+h3 + p {
+	margin:20px;
+}
+
+.idea-text {
+	padding:10px;
 }
 
 .skill-common {
@@ -325,23 +349,47 @@ h2 p {
 .fa-lightbulb:before {
 	content:"\f0eb";
 	font-size:8rem;
-	margin:0 0 0 0;
-	vertical-align: middle;
+	line-height:135px;
 }
 
 .fa-skillbrush:before {
 	content:"\f1fc";
 	font-size:7rem;
-	text-align:center;
-	vertical-align:middle;
+	top:50%;
+	margin-top:-12px;
+	line-height:135px;
 }
 
 .fa-sourcecode:before {
 	content:"\f121";
 	font-size:8rem;
-	vertical-align:middle;
+	line-height:135px;
 }
 
+@media screen and (max-width: 768px) {
+	.skill-list {
+		display:block;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.skill-list li {
+		display: block;
+		margin:30px 0 30px 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.skill-common {
+
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.skill-list li {
+
+	}
+}
 
 /*---------------------------------------------------------------------
  section class="contact-me"
@@ -351,7 +399,7 @@ h2 p {
 }
 
 .contact-me h2 {
-	color:#ffffff;
+	color:#FFFFFF;
 }
 
 form {
@@ -365,26 +413,43 @@ form {
 	padding:15px;
 	outline:none;
 	line-height:normal;
-	color:#ffffff;
+	color:#FFFFFF;
 	background-color:transparent;
+	opacity:0.9;
 }
 
 textarea {
 	display:block;
 	width:100%;
 	height:150px;
-	color:#ffffff;
-	background-color:transparent;
+	color:#FFFFFF;
+	border:1px;
+	border-style: solid;
+	background-color:rgba(255, 255, 255, 0.05);
+	opacity:0.9;
+}
+
+textarea:focus{
+	box-shadow:#FFFFFF;
+	outline:0;
 }
 
 .submit-message {
-	color:#ffffff;
+	color:#FFFFFF;
+	width:180px;
+	font-size:15px;
+	padding:20px;
 	background-color:transparent;
+}
+
+.submit-message:hover {
+	cursor:pointer;
+	opacity:(0.9);
 }
 
 /*---------------------------------------------------------------------
  section class="page-footer"
  ---------------------------------------------------------------------*/
 .page-footer {
-	color:#ffffff;
+	color:#FFFFFF;
 }
