@@ -3,6 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="description" content="フリーランスのWebデザイナー">
+<link rel="stylesheet" type="text/css" href="/reset.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
+<link rel="stylesheet" type="text/css" href="/Advanced_main.css">
 <title>シングルページレイアウト</title>
 </head>
 <body>
@@ -12,17 +16,17 @@
 		<p class="top-text">Web designer's portfolio</p>
 		<h1>HI,MY NAME IS...</h1>
 		<p class="sub-title">Check out some of my works.</p>
-		<a href="#about" class="top learn-more">LEARN MORE</a>
-		<a href="#contact" class="top send-message">SEND MESSAGE</a>
+		<a href="#about-me" class="button learn-more">LEARN MORE</a>
+		<a href="contact-me" class="button send-message">SEND MESSAGE</a>
 	</div>
 </header>
 
-<section class="about-me">
+<section id="about-me">
 	<h2>ABOUT ME</h2>
 	<p>
 	はじめまして。日本でwebデザイナーをしています。<br>
-	デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。</p>
-
+	デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。
+	</p>
 	<p>
 	このサイトは「HTML/CSS モダンコーディング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオです。<br>
 	このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。</p>
@@ -32,34 +36,46 @@
 	<h2>WORKS</h2>
 	<ul class="work-list">
 		<li>
-			<div class="first-text">
-				<p>ひとつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：xxx,xxx,xxx</p>
-				<a href="#"　class="read-more">READ MORE</a>
-			</div>
-			<img src="/Advanced-images/tree.jpg" class="common-image first-image">
+			<img src="/Advanced-images/tree.jpg" class="common-image first-image">	
+			<div class="work-container list-tree">
+				<div class="common-text">
+					<p class="work-text">ひとつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：xxx,xxx,xxx<br>
+					<a href="#" class="button read-more">READ MORE</a>
+					</p>
+				</div>
+			</div>			
 		</li>
 
 		<li>
 			<img src="/Advanced-images/building.jpg" class="common-image second-image">
-			<div class="second-text">
-				<p>ふたつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：xxx,xxx,xxx</p>
-				<a href="#"　class="read-more">READ MORE</a>
+			<div class="work-container list-building">
+				<div class="common-text">
+					<p class="work-text">ふたつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：xxx,xxx,xxx<br>
+					<a href="#" class="button read-more">READ MORE</a>
+					</p>
+				</div>
 			</div>
 		</li>
 
 		<li>
-			<div class="third-text">
-				<p>みっつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：xxx,xxx,xxx</p>
-				<a href="#"　class="read-more">READ MORE</a>
-			</div>
 			<img src="/Advanced-images/lake.jpg" class="common-image third-image">
+			<div class="work-container list-lake">
+				<div class="common-text">
+					<p class="work-text">みっつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：xxx,xxx,xxx<br>
+					<a href="#" class="button read-more">READ MORE</a>
+					</p>
+				</div>
+			</div>
 		</li>
 
 		<li>
 			<img src="/Advanced-images/sky.jpg" class="common-image forth-image">
-			<div class="forth-text">
-				<p>よっつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：xxx,xxx,xxx</p>
-				<a href="#"　class="read-more">READ MORE</a>
+			<div class="work-container list-sky">
+				<div class="common-text">
+					<p class="work-text">よっつめの制作事例が入ります。<br>簡単な説明が入ります。<br>使用ツール：xxx,xxx,xxx<br>
+					<a href="#" class="button read-more">READ MORE</a>
+					</p>
+				</div>
 			</div>
 		</li>
 	</ul>
@@ -69,44 +85,40 @@
 	<h2>MY SKILLS</h2>
 	<ul class="skill-list">
 		<li>
-			<div class="skill-common idea-skill">
-				<h3>IDEA</h3>
-				<p>
-				何かを考えることが好きです。<br>
-				新しいことを思いついては試しています。<br>
-				ディレクションの経験もあります。</p>
-			</div>
+			<div class="skill-common fa fa-lightbulb"></div>
+			<h3 class="idea-title">IDEA</h3>
+			<p class="skill-text">
+			何かを考えることが好きです。<br>
+			新しいことを思いついては試しています。<br>
+			ディレクションの経験もあります。</p>
 		</li>
 
 		<li>
-			<div class="skill-common design-skill">
-				<h3>DESIGN</h3>
-				<p>
-				見た目の綺麗さだけじゃなくて、<br>
-				使いやすさ、情報の伝わりやすさなど、<br>
-				その先まで考えることを意識しています。
-				</p>
-			</div>
+			<div class="skill-common fa fa-skillbrush"></div>
+			<h3 class="design-title">DESIGN</h3>
+			<p class="skill-text">
+			見た目の綺麗さだけじゃなくて、<br>
+			使いやすさ、情報の伝わりやすさなど、<br>
+			その先まで考えることを意識しています。
+			</p>
 		</li>
-
 		<li>
-			<div class="skill-common coding-skill">
-				<h3>CODING</h3>
-				<p>HTML/CSSコーディングも行います。<br>
-				正しく美しいマークアップと、<br>
-				今後の変更への強さを考慮しています。
-				</p>
-			</div>
+			<div class="skill-common fa fa-sourcecode"></div>
+			<h3 class="coding-title">CODING</h3>
+			<p class="skill-text">HTML/CSSコーディングも行います。<br>
+			正しく美しいマークアップと、<br>
+			今後の変更への強さを考慮しています。
+			</p>
 		</li>
 	</ul>
 </section>
 
-<section class="contact-me">
+<section id="contact-me">
 	<h2>CONTACT</h2>
 	<form action="#" method="post">
-		<p><input type="text" name="name" value="NAME" id="name-field"></p>
-		<textarea name="comment" id="comment" value="MESSAGE"></textarea>
-		<p><input type="submit" name="submit" value="SEND" class="send-message"></p>
+		<p><input type="text" name="name" placeholder="NAME" id="name-field"></p>
+		<textarea name="comment" id="comment" placeholder="MESSAGE"></textarea>
+		<p><input type="submit" name="submit" value="SEND" class="submit-message"></p>
 	</form>
 </section>
 
