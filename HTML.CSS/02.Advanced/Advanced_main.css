@@ -19,6 +19,13 @@ body {
 	font-family:Raleway,"HiraginoKaku Gothic ProN",Meiryo,sans-serif;
 }
 
+
+@media screen and (max-width: 1024px) {
+	body {
+		background-image:none;
+	}
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -53,6 +60,12 @@ h2::after {
 	padding:170px 30px 80px;
 }
 
+@media screen and (max-width: 768px) {
+	.page-header {
+		padding:60px 30px 70px 30px;
+	}
+}
+
 .top-contents {	
 	max-width: 100%;
 	color:#FFFFFF;
@@ -64,6 +77,13 @@ h2::after {
 	font-size: 25px;
 }
 
+@media screen and (max-width: 768px) {
+	.top-text {
+		font-size:15px;
+	}
+}
+
+
 .sub-title {
 	color:#666666;
 	margin-bottom:60px;
@@ -72,6 +92,13 @@ h2::after {
 h1 {
 	font-size:90px;
 	margin:50px 0 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		margin:35px 0 0 0;
+		font-size:5rem;
+	}
 }
 
 .button {
@@ -91,6 +118,14 @@ h1 {
 	border:1px solid #FFFFFF;
 }
 
+@media screen and (max-width: 768px) {
+	.top-text::before , .top-text::after {
+		display: block;
+		width:80%;
+		margin:10px auto;
+	}
+}
+
 .top:hover {
 	opacity:0.9;
 }
@@ -99,20 +134,24 @@ h1 {
 	margin-left:15px;
 	color:#fFFFFF;
 	text-decoration: none;
-	border-color:#f2aD36;
-	background-color:#f2aD36;
+	border-color:#F2AD36;
+	background-color:#F2AD36;
 }
 
 .send-message {
+	margin:5px;
 	color:#FFFFFF;
 }
 
 .learn-more {
+		margin:5px;
+		margin-left:15px;
 		color:#FFFFFF;
 		text-decoration: none;
 		border-color:#AFA58D;;
 		background-color:#AFA58D;
 }
+
 
 /*---------------------------------------------------------------------
  section class="about-me"
@@ -126,9 +165,21 @@ h1 {
 
 }
 
+@media screen and (max-width: 768px) {
+	.about-me {
+		padding:50px 30px 50px 30px;
+	}
+}
+
 h2 ~ p {
 	margin: 35px;
 	line-height:2;
+}
+
+@media screen and (max-width: 768px) {
+	h2 ~ p {
+		font-size:12.5px;
+	}
 }
 
 /*---------------------------------------------------------------------
@@ -141,12 +192,18 @@ h2 ~ p {
 	background-color:#383634;
 }
 
+@media screen and (max-width: 768px) {
+	.my-works > h2 {
+		margin:;
+	}
+}
+
 
 /*---------------------------------------------------------------------
 	work-list
  ---------------------------------------------------------------------*/
 
-.work-list{
+.work-list {
 	display:flex;
 	width:100%;
 	padding:0 0 0 0 ;
@@ -158,10 +215,22 @@ h2 ~ p {
 	display:table-cell;
 }
 
+@media screen and (max-width: 768px) {
+	.work-list, .work-list li {
+		display:block;
+	}
+}
+
 .common-image {
 	display: block;
 	width:100%;
 	margin:0 0 60%;
+}
+
+@media screen and (max-width: 768px) {
+	.common-image {
+		display: none;
+	}
 }
 
 .list-tree {
@@ -214,14 +283,21 @@ h2 ~ p {
 .work-text {
 	display:table-cell;
 	width:100%;
-	text-align:center;
 	vertical-align:middle;
 	font-size:1.2rem;
 	line-height:2;
 }
 
+.read-more {
+	width:60%;
+	border:1px solid;
+	margin-top:20px;
+	padding:3px;
+	background-color:rgba(255, 255, 255, 0.05);
+}
+
 p > a {
-	width:180px;
+	width:60%;
 	margin-top:15px;
 	padding:0;
 	border: solid;
@@ -250,6 +326,14 @@ p > a:hover {
 	transform:scaleY(-1);
 }
 
+@media screen and (max-width: 768px) {
+	.work-list, .work-list > li::after {
+	top:0;
+	height:100%;
+	background-size: cover;
+	}
+}
+
 .work-list li:nth-child(1)::after {
 	background-image:url("/Advanced-images/tree.jpg");
 }
@@ -263,7 +347,7 @@ p > a:hover {
 }
 
 .work-list li:nth-child(4)::after {
-	background-image:url("/Advanced-images/lake.jpg");
+	background-image:url("/Advanced-images/SKY.jpg");
 }
 
 .work-list li:nth-child(odd)::after {
@@ -278,8 +362,11 @@ p > a:hover {
 	margin:60% 0 0 0;
 }
 
-
-
+@media screen and (max-width: 768px) {
+	.work-container {
+		position:relative;
+	}
+}
 
 
 /*---------------------------------------------------------------------
@@ -311,8 +398,21 @@ h3 {
 	table-layout: fixed;
 }
 
+@media screen and (max-width: 768px) {
+	.skill-list {
+		display:block;
+	}
+}
+
 .skill-list li {
 	display: table-cell;
+}
+
+@media screen and (max-width: 768px) {
+	.skill-list li {
+		display: block;
+		margin:30px 0 30px 0;
+	}
 }
 
 .skill-list li p {
@@ -323,17 +423,22 @@ h3 + p {
 	margin:20px;
 }
 
-.idea-text {
-	padding:10px;
+.skill-text {
+	margin-top:10px;
+}
+
+@media screen and (max-width: 768px) {
+	.skill-text {
+		font-size:1.3rem;
+	}
 }
 
 .skill-common {
 	width:150px;
 	height:150px;
-	margin-bottom: 50px;
 	border:4px solid;
 	border-radius: 50%;
-	color:#f1b400;
+	color:#F1B400;
 	font-size:8rem;
 	line-height:142px;
 }
@@ -345,6 +450,14 @@ h3 + p {
 	text-rendering:auto;
 	transform:translate(0,0);
 }
+@media screen and (max-width: 768px) {
+	.fa {
+		width:100px;
+		height:100px;
+		line-height:100px;
+	}
+}
+
 
 .fa-lightbulb:before {
 	content:"\f0eb";
@@ -367,29 +480,12 @@ h3 + p {
 }
 
 @media screen and (max-width: 768px) {
-	.skill-list {
-		display:block;
+	.fa-lightbulb:before, .fa-skillbrush:before, .fa-sourcecode:before {
+		font-size:50px;
+		line-height:5px;
 	}
 }
 
-@media screen and (max-width: 768px) {
-	.skill-list li {
-		display: block;
-		margin:30px 0 30px 0;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.skill-common {
-
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.skill-list li {
-
-	}
-}
 
 /*---------------------------------------------------------------------
  section class="contact-me"
@@ -407,15 +503,22 @@ form {
 	margin:50px auto 0;
 }
 
+@media screen  and (max-width: 768px) {
+	form {
+		width:80%;
+	}
+}
+
+
 #name-field {
 	display:block;
 	width:100%;
 	padding:15px;
 	outline:none;
 	line-height:normal;
+	border-color: rgba(255, 255, 255, 0.6);
+	background-color:rgba(255, 255, 255, 0.05);
 	color:#FFFFFF;
-	background-color:transparent;
-	opacity:0.9;
 }
 
 textarea {
@@ -429,16 +532,13 @@ textarea {
 	opacity:0.9;
 }
 
-textarea:focus{
-	box-shadow:#FFFFFF;
-	outline:0;
-}
-
 .submit-message {
-	color:#FFFFFF;
-	width:180px;
+	color:rgba(255, 255, 255, 0.6);
+	border-color:rgba(255, 255, 255, 0.6);
+	width:200px;
 	font-size:15px;
-	padding:20px;
+	margin:20px;
+	padding:20px 20px 20px 20px;
 	background-color:transparent;
 }
 
