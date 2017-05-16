@@ -3,16 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="description" content="サンプルサイト">
-<link rel="stylesheet" type="text/css" href="/reset.css">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
-<link rel="stylesheet" type="text/css" href="/Advanced_main.css">
 <title>スタンダードレイアウト</title>
 </head>
 <body>
-
 <header class="page-header">
-	<img src="/./images/logo.png" class="site-logo">
+	<div class="page-title">
+		<img src="/./images/logo.png" class="site-logo">
+	</div>
 	<ul class="navigation-bar">
 		<li>HOME</li>
 		<li>ABOUT</li>
@@ -21,24 +18,21 @@
 		<li>DOCS</li>
 		<li>BLOG</li>
 	</ul>
-<header>
-<main>
-	<figure>
-		<img src="/./images/hot-topic.jpg">
-	</figure>
-	<figcaption>
-		<p>2015.09.01 TUE</p>
-		<p>
-			実務で使えるHTML/CSS<br>
-			モダンコーディングTIPS
-		</p>
-		<p>Webフロントエンドの進化の勢いはとどまるところを知りません新しい要素が増えて大幅に表現力が上がったHTML5/CSS3</p>
-	</figcaption>
+</header>
 
+<main>
+	<section class="top-image">
+		<a href="#">
+			<img src="/./images/hot-topic.jpg">
+			<p>2015.09.01 TUE</p>
+			<p>実務で使えるHTML/CSS<br>モダンコーディングTIPS</p>
+			<p>Webフロントエンドの進化の勢いはとどまるところを知りません新しい要素が増えて大幅に表現力が上がったHTML5/CSS3を活用して...</p>
+		</a>
+	</section>
 
 	<section class="site-topics">
 		<h2>NEWS</h2>
-		<ul>
+		<ul　class="news-list">
 			<li>
 				<a href="#">
 					<span>2015.08.23 SUN</span>
@@ -56,7 +50,7 @@
 			</li>
 
 			<li>
-				<a href="">
+				<a href="#">
 					<span>2015.08.04 TUE</span>
 					<span class="news-color">NEWS</span>
 					<span>TOPICSを更新しました。</span>
@@ -64,15 +58,15 @@
 			</li>
 
 			<li>
-				<a href="">
+				<a href="#">
 					<span>2015.07.25 SAT</span>
-					<span>TOPIC</span>
+					<span　class="topic-color">TOPIC</span>
 					<span>HTML/CSSコーディングと切っても切れないWebブラウザのシェア動向をチェック</span>
 				</a>
 			</li>
 
 			<li>
-				<a href="">
+				<a href="#">
 					<span>2015.07.09 THU</span>
 					<span class="topic-color">TOPIC</span>
 					<span>HTML5の新しい属性で手軽にフォームバリデーション</span>
@@ -80,7 +74,7 @@
 			</li>
 
 			<li>
-				<a href="">
+				<a href="#">
 					<span>2015.06.30 TUE</span>
 					<span class="news-color">NEWS</span>
 					<span>WORKSを更新しました。</span>
@@ -89,57 +83,95 @@
 		</ul>
 	</section>
 
-	<section>
-	　<img src="/./images/article.jpg">
+	<section class="box-container">
+		<a href="#" class="image-box">
+	　		<img src="/./images/article.jpg">
+			<span>実務で使えるHTML/CSSモダンコーディングTIPS</span>
+			<span>新しい要素が増えて大幅に表現力が広がったHTM/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</span>
+			<span class="data-color">2015.06.17 WED</span>
+		</a>
+		<a href="#" class="image-box">
+	　		<img src="/./images/article.jpg">
+			<span>実務で使えるHTML/CSSモダンコーディングTIPS</span>
+			<span>新しい要素が増えて大幅に表現力が広がったHTML/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</span>
+			<span class="data-color">2015.06.17 WED</span>
+		</a>
+		<a href="#" class="image-box">
+	　		<img src="/./images/article.jpg">
+			<span>実務で使えるHTML/CSSモダンコーディングTIPS</span>
+			<span>新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</span>
+			<span class="data-color">2015.06.17 WED</span>
+		</a>
+		<a href="#" class="image-box">
+	　		<img src="/./images/article.jpg">
+			<span>実務で使えるHTML/CSSモダンコーディングTIPS</span>
+			<span>新しい要素が増えて大幅に表現力が広がったHTML/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</span>
+			<span class="data-color">2015.06.17 WED</span>
+		</a>
 	</section>
 
-	<section class="rightbar-top">
+	<section class="rightbar">
 		<ul class="rannking-list">
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
+			<li>
+				<img src="/./images/ranking.jpg"　class="common-image">
+				<p>HTML/CSSコーディングと切ってもきれないWebブラウザのシェア動向をチェックしよう
+			</li>
+			<li>
+				<img src="/./images/ranking.jpg" class="common-image">
+				<p>HTML/CSSコーディングと切ってもきれないWebブラウザのシェア動向をチェックしよう
+			</li>
+			<li>
+				<img src="/./images/ranking.jpg" class="common-image">
+				<p>HTML/CSSコーディングと切ってもきれないWebブラウザのシェア動向をチェックしよう
+			</li>
+			<li>
+				<img src="/./images/ranking.jpg" class="common-image">
+				<p>HTML/CSSコーディングと切ってもきれないWebブラウザのシェア動向をチェックしよう
+			</li>
+			<li>
+				<img src="/./images/ranking.jpg" class="common-image">
+				<p>HTML/CSSコーディングと切ってもきれないWebブラウザのシェア動向をチェックしよう
+			</li>
+			<li>
+				<img src="/./images/ranking.jpg" class="common-image">
+				<p>HTML/CSSコーディングと切ってもきれないWebブラウザのシェア動向をチェックしよう
+			</li>
+			<li>
+				<img src="/./images/ranking.jpg" class="common-image">
+				<p>HTML/CSSコーディングと切ってもきれないWebブラウザのシェア動向をチェックしよう
+			</li>			
 		</ul>
-	</section>
-
-	<section class="rightbar-bottom">
 		<h2>DOCUMENT</h2>
-		<h3>HTML5</h3>
+		<h3 class="documents-subtitile">HTML5</h3>
 		<ul class="HTML5-list">
-			<li><a href="#">追加された要素</a></li>
-			<li><a href="#">削除された要素</a></li>
-			<li><a href="#">削除された要素</a></li>
-			<li><a href="#">HTML5のコンテンツモデル</a></li>
+			<li><a href="#" class="list-text">追加された要素</a></li>
+			<li><a href="#" class="list-text">削除された要素</a></li>
+			<li><a href="#" class="list-text">削除された要素</a></li>
+			<li><a href="#" class="list-text">HTML5のコンテンツモデル</a></li>
 		</ul>
 
-		<h3>CSS3</h3>
+		<h3 class="documents-subtitile">CSS3</h3>
 		<ul class="CSS3-list">
-			<li><a href="#">追加されたプロパティ</a></li>
-			<li><a href="#">追加されたセレクタ</a></li>
-			<li><a href="#">追加された単位</a></li>
+			<li><a href="#" class="list-text">追加されたプロパティ</a></li>
+			<li><a href="#" class="list-text">追加されたセレクタ</a></li>
+			<li><a href="#" class="list-text">追加された単位</a></li>
 		</ul>
 
-		<h3>JavaScript</h3>
+		<h3 class="documents-subtitile">JavaScript</h3>
 		<ul class="JS-list">
-			<li><a href="#">JavaScriptの言語仕様</a></li>
-			<li><a href="#">ECMAScriptとは？</a></li>
-			<li><a href="#">Jqueryとは？</a></li>
+			<li><a href="#" class="list-text">JavaScriptの言語仕様</a></li>
+			<li><a href="#" class="list-text">ECMAScriptとは？</a></li>
+			<li><a href="#" class="list-text">Jqueryとは？</a></li>
 		</ul>
-
-		<h3>Sass,Less,Stylus</h3>
+		<h3 class="documents-subtitile">Sass,Less,Stylus</h3>
 		<p>準備中</p>
-
-		<h3>TypeScript</h3>
+		<h3 class="documents-subtitile">TypeScript</h3>
 		<p>準備中</p>
 	</section>
 </main>
 
-
 <footer class="page-footer">
-	<ul>
+	<ul class=footer-nav>
 		<li>ABOUT ME</li>
 		<li>SITE MAP</li>
 		<li>SNS</li>
